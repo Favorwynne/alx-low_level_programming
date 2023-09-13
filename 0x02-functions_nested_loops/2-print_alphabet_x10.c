@@ -1,4 +1,4 @@
-#include "main_h"
+#include "main.h"
 
 /**
  * print_alphabet_x10 - print alphabet_x10 in lower case followed by new line
@@ -6,7 +6,6 @@
 
 void print_alphabet_x10(void)
 {
-
         char i;
         int j;
 
