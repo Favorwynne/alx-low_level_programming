@@ -1,19 +1,24 @@
 #include "main.h"
 
 /**
- * puts2 - function shoukld print only one character
- * starting with the first one
- * @str: input
- * Return: print
+ * puts2 - function that prints every other character of a string
+ * starting with the first char
+ * followed by a new line.
+ *
+ * @str: the variable pointer at str
+ *
  */
 
 void puts2(char *str)
 {
 	int i;
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-	_putchar(str[i]);
+	if (i % 2 == 0)
+	{
+		_putchar(str[i]);
+	}
 	}
 	_putchar('\n');
 }
