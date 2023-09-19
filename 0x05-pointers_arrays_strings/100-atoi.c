@@ -32,7 +32,7 @@ int _atoi(char *s)
 		i++;
 	}
 	if (sign < 0)
-	value *= -1;
+		value *= -1;
 
 	return (0);
 }
