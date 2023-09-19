@@ -1,20 +1,17 @@
-#include "main.h"
 #include <stdio.h>
 
+void puts2(char *);
+
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int a;
-	int b;
+	char *str;
 
-	a = 98;
-	b = 42;
-	printf("a=%d, b=%d\n", a, b);
-	swap_int(&a, &b);
-	printf("a=%d, b=%d\n", a, b);
+	str = "Holberton!\0Holberton";
+	puts2(str);
 	return (0);
 }
